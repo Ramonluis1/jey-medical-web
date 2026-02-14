@@ -1,0 +1,271 @@
+[
+            {
+                id: 1,
+                category: 'diagnostic',
+                brand: 'Health o Meter',
+                title: 'Digital Scale 500KL',
+                price: 395.00,
+                desc: 'The number one selling scale for primary care. Offers maximum precision and a wide platform for patient comfort.',
+                specs: ['Capacity: 250 kg / 550 lb', 'EMR Ready Technology', 'Automatic BMI Calculation', '2 Year Warranty'],
+                img: 'FOTOS/361-500KLAD.png'
+            },
+
+            {
+                id: 3,
+                category: 'surgical',
+                brand: 'Blickman',
+                title: 'Chrome Mayo Stand',
+                price: 131.00,
+                desc: 'Gold standard in operating rooms. Medical grade stainless steel resistant to corrosion and easy sterilization.',
+                specs: ['Precision height adjustment', 'Antistatic wheels', 'Removable tray', '304 Stainless Steel'],
+                img: 'FOTOS/516-0668871000.png'
+            },
+            {
+                id: 4,
+                category: 'diagnostic',
+                brand: 'Detecto',
+                title: 'Portable Scale 6560',
+                price: 3745.00,
+                desc: 'Designed for bariatric patients. Features safety handrails and integrated fold-up seat.',
+                specs: ['Capacity: 1000 lbs', 'Extra wide platform', 'Integrated padded seat', 'Wi-Fi/Bluetooth Connectivity'],
+                img: 'FOTOS/184-6560 Portable with Handrail.png'
+            },
+            {
+                id: 5,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Phlebotomy Chair 66029P',
+                price: 445.00,
+                desc: 'Superior ergonomics for labs. Adjustable arms and antimicrobial surface for maximum hygiene.',
+                specs: ['Pneumatic height adjustment', 'Flip-up arms', 'Chrome 5-point base', 'Hospital grade vinyl'],
+                img: 'FOTOS/466-66029P.png'
+            },
+            {
+                id: 6,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Sydney Medical Chair',
+                price: 2399.00,
+                desc: 'Luxury and functionality for aesthetic clinics. 4 motors control height, backrest, and footrest independently.',
+                specs: ['Hand and foot remote control', '240-degree rotation', 'Premium durable upholstery', 'Position memory'],
+                img: 'FOTOS/848-8228-BK - Sydney Medical Chair 4 Motors with Foot Remote & Hand Remote.png'
+            },
+            {
+                id: 7,
+                category: 'pediatric',
+                brand: 'Novum Medical',
+                title: 'Steel Hospital Crib',
+                price: 3164.00,
+                desc: 'Total safety for the smallest patients. Complies with all FDA pediatric safety regulations.',
+                specs: ['360° full access rails', '20 gauge steel', 'Antimicrobial mattress included', '5-inch wheels with brakes'],
+                img: 'FOTOS/263-E1981CG - CRIB,CHILD,GATCH DECK EPOXY.png'
+            },
+            {
+                id: 8,
+                category: 'surgical',
+                brand: 'Lakeside',
+                title: 'Utility Cart 311',
+                price: 217.00,
+                desc: 'Sterile mobile organization. Ideal for transporting instruments in clean areas.',
+                specs: ['3 soft-close drawers', 'Shelves with perimeter edge', 'Welded construction', 'Protective bumpers'],
+                img: 'FOTOS/531-311.png'
+            },
+            {
+                id: 9,
+                category: 'aesthetic',
+                brand: 'MS3C',
+                title: 'ProX Ambulance Stretcher',
+                price: 2685.00,
+                desc: 'Lightweight and durable for emergencies. Automatic loading system to facilitate paramedic work.',
+                specs: ['Aluminum structure', 'Orange waterproof mattress', 'Adjustable backrest 0-75°', 'Capacity 550 lbs'],
+                img: 'FOTOS/MS3C-ProX Frame Emergency Ambulance Stretcher.png'
+            },
+            {
+                id: 10,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Medical Cabinet 3013-27',
+                price: 0.00,
+                desc: 'High quality medical storage solution designed for clinical environments. Durable construction and easy to clean surfaces.',
+                specs: ['Premium laminate finish', 'Adjustable shelving', 'Soft-close hinges', 'Dimensions: Standard'],
+                img: 'FOTOS/466-3013-27.png'
+            },
+            {
+                id: 11,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Medical Cabinet 3013-28',
+                price: 825.00,
+                desc: 'Versatile medical cabinetry providing efficient storage and organization for exam rooms.',
+                specs: ['Easy-clean surfaces', 'Integrated sink option', 'Durable hardware', 'Modern design'],
+                img: 'FOTOS/466-3013-28.png'
+            },
+            {
+                id: 12,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Wall Cabinet 6059-U',
+                price: 641.00,
+                desc: 'Space-saving wall unit with durable construction. Ideal for maximizing exam room storage.',
+                specs: ['Easy-clean laminate', 'Adjustable shelves', 'Pre-assembled', 'Concealed hinges'],
+                img: 'FOTOS/466-6059-U-3WW.png'
+            },
+            {
+                id: 13,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Power Table 67200',
+                price: 3500.00,
+                desc: 'Full power imaging table with adjustable height and sections. Designed for patient comfort and ease of access.',
+                specs: ['Power height adjustment', 'Trendelenburg positioning', 'Paper dispenser included', 'Heavy-duty steel frame'],
+                img: 'FOTOS/466-67200.png'
+            },
+            // Nibomed / Transport
+            { id: 14, category: 'surgical', brand: 'Nibomed', title: 'Stretcher Transport E200', price: 2850.00, desc: 'Reliable transport stretcher designed for patient safety and ease of maneuverability.', specs: ['Hydraulic height adjustment', 'Retractable guardrails', 'Central locking system', 'IV pole included'], img: 'FOTOS/493-E200.png' },
+            { id: 15, category: 'surgical', brand: 'Nibomed', title: 'Stretcher Trauma E200IX', price: 3200.00, desc: 'Trauma stretcher with Knee Gatch function for enhanced patient positioning.', specs: ['X-ray compatible deck', 'Knee gatch adjustment', 'Trendelenburg/Reverse Trendelenburg', 'Weight capacity: 550 lbs'], img: 'FOTOS/493-E200IX.png' },
+            { id: 16, category: 'furniture', brand: 'Nibomed', title: 'Medical Cabinet ALK06-AG01', price: 950.00, desc: 'Durable medical storage cabinet for clinical supplies.', specs: ['Stainless steel construction', 'Lockable doors', 'Adjustable shelves', 'Easy to clean'], img: 'FOTOS/493-ALK06-AG01.png' },
+            { id: 17, category: 'furniture', brand: 'Nibomed', title: 'Medical Cart ALK06-AT3', price: 680.00, desc: 'Versatile utility cart for medical equipment transport.', specs: ['Multi-tier storage', 'Smooth rolling casters', 'Heavy duty frame', 'Ergonomic handles'], img: 'FOTOS/493-ALK06-AT3.png' },
+
+            // Hausted
+            { id: 18, category: 'furniture', brand: 'Hausted', title: 'Phlebotomy Chair Bariatric 6200DA', price: 1047.00, desc: 'Heavy-duty phlebotomy chair designed for bariatric patients.', specs: ['Extra wide seat', 'Reinforced frame', 'Padded armrests', 'Easy entry/exit'], img: 'FOTOS/45-6200DA.png' },
+            { id: 19, category: 'furniture', brand: 'Hausted', title: 'Exam Table 4200', price: 1795.00, desc: 'Examination table with integrated drawers and stirrups.', specs: ['Storage drawers included', 'Adjustable stirrups', 'Paper roll holder', 'Seamless upholstery'], img: 'FOTOS/45-4200.png' },
+            { id: 20, category: 'aesthetic', brand: 'Hausted', title: 'All-Purpose Hydraulic Chair APC250ST-X', price: 3895.00, desc: 'Versatile hydraulic chair suitable for various medical procedures.', specs: ['Hydraulic lift', 'Rotational base', 'Reclining backrest', 'Adjustable headrest'], img: 'FOTOS/45-APC250ST-X.png' },
+            { id: 21, category: 'furniture', brand: 'Hausted', title: 'Replacement Pad 1007-02', price: 156.00, desc: 'High-quality replacement pad for medical tables (29x76x4).', specs: ['Dimensions: 29" x 76" x 4"', 'Durable foam', 'Vinyl cover', 'Easy to sanitize'], img: 'FOTOS/45-HSP-1007-02.png' },
+            { id: 22, category: 'furniture', brand: 'Hausted', title: 'Replacement Pad 1007-05', price: 145.00, desc: 'Replacement pad for stretchers or tables (24x76x4).', specs: ['Dimensions: 24" x 76" x 4"', 'Comfortable support', 'Fluid resistant', 'Standard fit'], img: 'FOTOS/45-HSP-1007-05.png' },
+
+            { id: 23, category: 'surgical', brand: 'Blickman', title: 'Surgical Utensil 1011261000', price: 85.00, desc: 'Operating room equipment crafted from high-grade stainless steel.', specs: ['304 Stainless Steel', 'Corrosion resistant', 'Sterilizable', 'OR Standard'], img: 'FOTOS/516-1011261000.png' },
+            { id: 24, category: 'surgical', brand: 'Blickman', title: 'Surgical Kit 24224400KT', price: 245.00, desc: 'Specialized surgical instrument or accessory kit.', specs: ['Precision crafted', 'Medical grade', 'Autoclavable', 'Durable'], img: 'FOTOS/516-24224400KT.png' },
+            { id: 25, category: 'surgical', brand: 'Blickman', title: 'Medical Device 0531415400-M1', price: 420.00, desc: 'Professional medical equipment solution.', specs: ['Heavy duty', 'Hospital grade', 'Reliable performance', 'Easy maintenance'], img: 'FOTOS/516-0531415400-M1.png' },
+
+            // Detecto
+            { id: 26, category: 'furniture', brand: 'Detecto', title: 'Rescue Cart Anesthesiology (Blue)', price: 1484.00, desc: 'Blue anesthesia cart with 6 drawers for organized secure storage.', specs: ['6 Drawers', 'Key lock', 'Push handle', 'ABS bumpers'], img: 'FOTOS/184-RC33669BLU-L.png' },
+            { id: 27, category: 'furniture', brand: 'Detecto', title: 'Rescue Cart Anesthesiology (Blue)', price: 1490.00, desc: 'Anesthesia cart designed for efficient workflow.', specs: ['Durable steel construction', 'Full extension slides', 'Removable plastic top', '5-inch wheels'], img: 'FOTOS/184-RC33669BLU-L.png' },
+            { id: 28, category: 'surgical', brand: 'Detecto', title: 'Crash Cart Emergency (Red) 6-Drawer', price: 1980.00, desc: 'Emergency crash cart with 6 drawers for critical care supplies.', specs: ['Red for emergency visibility', 'Break-away lock', 'IV pole mount', 'Oxygen tank holder'], img: 'FOTOS/184-RC333369RED-L.png' },
+            { id: 29, category: 'surgical', brand: 'Detecto', title: 'Crash Cart Emergency (Red) 5-Drawer', price: 1895.00, desc: '5-drawer emergency cart for rapid response.', specs: ['Quick access', 'Stabilizer base', 'Cardiac board', 'Defibrillator shelf'], img: 'FOTOS/184-RC333369RED-L.png' },
+            { id: 30, category: 'furniture', brand: 'Detecto', title: 'Rescue Cart General Purpose (White)', price: 2155.00, desc: 'Multi-purpose white medical cart for general hospital use.', specs: ['Clean white finish', 'Multi-drawer configuration', 'Easy glide casters', 'Sanitary surfaces'], img: 'FOTOS/184-RC33669WHT.png' },
+
+            // UMF Medical
+            { id: 31, category: 'furniture', brand: 'UMF Medical', title: 'POWER EXAM TABLE SOFT LINEN', price: 2471.00, desc: 'Power examination table with soft linen upholstery for patient comfort.', specs: ['Power height/back', 'Programmable positions', 'High weight capacity', 'Foot control'], img: 'FOTOS/248-4040-650-200-SL.png' },
+            { id: 33, category: 'furniture', brand: 'UMF Medical', title: 'Procedure Chair 5016', price: 3418.00, desc: 'Advanced procedure chair in True Graphite color.', specs: ['Articulating headrest', 'Power tilt', 'Accessory rails', 'Ergonomic design'], img: 'FOTOS/248-5016-650-300-044.png' },
+            {
+                id: 34,
+                category: 'surgical',
+                brand: 'Blickman',
+                title: 'MAYO TRAY S/S 16"X21" BENJAMIN',
+                price: 135.00,
+                desc: 'Stainless steel Mayo Tray, 16" x 21". Durable construction for surgical environments.',
+                specs: ['Stainless Steel', '16" x 21" Dimensions', 'Durable Construction', 'Easy to Clean'],
+                img: 'FOTOS/516-0668871000.png'
+            },
+            {
+                id: 35,
+                category: 'furniture',
+                brand: 'MS3C',
+                title: 'Lite ABS Medication Cart 200MB',
+                price: 780.00,
+                desc: 'Lightweight ABS medication cart designed for ease of mobility and efficient storage.',
+                specs: ['ABS Plastic Construction', 'Lightweight Design', 'Secure Medication Storage', 'Easy to Maneuver'],
+                img: 'FOTOS/MS3C-200MB, Lite ABS Medication.png'
+            },
+            {
+                id: 36,
+                category: 'surgical',
+                brand: 'MS3C',
+                title: 'Evacuation Chair 100TS',
+                price: 295.00,
+                desc: 'Lightweight stair evacuation chair for emergency patient transport.',
+                specs: ['Aluminum alloy', 'Foldable structure', 'Capacity: 350 lbs', 'Easy operation'],
+                img: 'FOTOS/MS3C-100TS, Lightweight Stair Evacuation Chair.png'
+            },
+            // DIR Aesthetics
+            {
+                id: 37,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Ink Electric Esthetician Chair 8103-3G-GY',
+                price: 1999.00,
+                desc: '3-Motor electric esthetician chair for precise positioning and comfort.',
+                specs: ['3 Motors', 'Electric adjustment', 'Premium upholstery', 'Versatile application'],
+                img: 'FOTOS/848-8103-3G-GY - Ink Electric Esthetician Chair - 3 Motors.png'
+            },
+            {
+                id: 38,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Pavo Rotating Spa Table 8709-2G-BK',
+                price: 2250.00,
+                desc: 'Pavo rotating medical spa treatment table/chair with 4 motors.',
+                specs: ['4 Motors', 'Rotating base', 'Fully adjustable', 'Ergonomic design'],
+                img: 'FOTOS/848-8709-2G-BK.png'
+            },
+            {
+                id: 39,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Aurora Spa Table 8266-2G-GY',
+                price: 2500.00,
+                desc: 'Aurora Medical Spa Table with 4 motors and hand/foot remote.',
+                specs: ['4 Motors', 'Hand & Foot Remote', 'Luxurious comfort', 'Heavy-duty stability'],
+                img: 'FOTOS/848-8266-2G-GY Aurora Medical Spa Table with 4 Motors, Plus Hand & Foot.png'
+            },
+            {
+                id: 40,
+                category: 'pediatric',
+                brand: 'UMF Medical',
+                title: 'Baby Bassinette SS8525',
+                price: 862.00,
+                desc: 'Stainless steel bassinette with mattress, shelf, and drawer. Ensures safety and durability for pediatric care.',
+                specs: ['Stainless Steel Frame', 'Clear Acrylic Basket', 'Storage Shelf & Drawer', 'Locking Casters'],
+                img: 'FOTOS/248-SS8525.png'
+            },
+            {
+                id: 41,
+                category: 'surgical',
+                brand: 'Cogent',
+                title: 'Transport Stretcher E200 (Updates)',
+                price: 3100.00,
+                desc: 'Advanced transport stretcher with updated features for patient safety and comfort.',
+                specs: ['Hydraulic height adjustment', 'Trendelenburg / Reverse Trendelenburg', 'Central locking system', 'Retractable 5th wheel'],
+                img: 'FOTOS/Camillas de Transporte E200 ( Updates ).png'
+            },
+            {
+                id: 42,
+                category: 'surgical',
+                brand: 'Detecto',
+                title: 'Crash Cart System (Updates)',
+                price: 1550.00,
+                desc: 'Updated crash cart system designed for rapid emergency response and organized storage.',
+                specs: ['Defibrillator shelf', 'IV pole', 'Cardiac board', 'Central lock'],
+                img: 'FOTOS/Carros de paro ( Updates ).png'
+            },
+            {
+                id: 43,
+                category: 'surgical',
+                brand: 'Detecto',
+                title: 'Anesthesia Cart (New Version)',
+                price: 1720.00,
+                desc: 'New generation anesthesia cart with enhanced security and ergonomic features.',
+                specs: ['Advanced locking system', 'Accessory rails', 'Smooth rolling casters', 'Large capacity drawers'],
+                img: 'FOTOS/Carro de anestesiología nueva version.png'
+            },
+            {
+                id: 44,
+                category: 'surgical',
+                brand: 'Detecto',
+                title: 'Anesthesia Cart (Classic)',
+                price: 1350.00,
+                desc: 'Classic anesthesia cart featuring durable construction and proven reliability.',
+                specs: ['Standard configuration', 'Durable steel body', 'Easy to clean', 'Multiple drawer sizes'],
+                img: 'FOTOS/Carro de anestesiología antigua version.png'
+            },
+            {
+                id: 45,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Dream In Reality',
+                price: 0.00,
+                desc: 'Premium salon and spa furniture representing the Dream In Reality collection. Contact us for specific model details.',
+                specs: ['Premium Upholstery', 'Heavy-duty construction', 'Ergonomic Design', 'Professional Usage'],
+                img: 'FOTOS/(848) - DREAM IN REALITY.png'
+            }
+        ]

@@ -1,0 +1,2225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEY MEDICAL SUPPLIES & LOGISTICS. LLC.</title>
+    <!-- Fuentes Google -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- VARIABLES Y RESET --- */
+        :root {
+            --primary-dark: #0B1E3B;
+            /* Azul Medianoche - Autoridad */
+            --primary-light: #163A5F;
+            --accent: #00D2D3;
+            /* Turquesa Eléctrico - Innovación */
+            --accent-hover: #01a3a4;
+            --white: #ffffff;
+            --gray-light: #F4F7F6;
+            --text-dark: #2d3436;
+            --text-muted: #636e72;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--gray-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        .btn {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* --- HEADER & NAV --- */
+        header {
+            background-color: var(--white);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .top-bar {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 8px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: -1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo i {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-weight: 600;
+            color: var(--primary-light);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, #00d2d3 0%, #00a8ff 100%);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 15px rgba(0, 210, 211, 0.4);
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 210, 211, 0.6);
+            background: linear-gradient(135deg, #00a8ff 0%, #00d2d3 100%);
+        }
+
+        /* --- SECTION HEADERS --- */
+        .section-header {
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .section-header h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--accent);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        .section-header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            margin-top: 100px;
+            /* Increased to prevent cutoff */
+            height: 650px;
+            background: linear-gradient(to right, rgba(11, 30, 59, 0.95) 0%, rgba(11, 30, 59, 0.7) 100%), url('FOTOS/medical_warehouse_bg.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            /* Added side padding */
+        }
+
+        .hero-content {
+            z-index: 2;
+            text-align: left;
+            /* Align text to left for better composition */
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.8rem;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            opacity: 1;
+            /* Full opacity for better reading */
+            color: #e0e0e0;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content span {
+            color: var(--accent);
+        }
+
+        .hero-watermark {
+            position: absolute;
+            bottom: 40px;
+            right: 50px;
+            display: flex;
+            flex-direction: column;
+            /* Stack logo and text */
+            align-items: flex-end;
+            /* Align to right */
+            gap: 10px;
+            opacity: 0.9;
+            /* Much higher visibility */
+            z-index: 10;
+        }
+
+        .hero-watermark img {
+            height: 80px;
+            /* Larger logo */
+            width: auto;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+            /* Shadow instead of weird filter */
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+
+        .hero-watermark span {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* --- FILTERS --- */
+        .catalog-section {
+            padding: 80px 5%;
+            max-width: 1400px;
+            margin: 140px auto 0;
+            /* Added top margin to clear fixed header */
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .filter-btn {
+            background: var(--white);
+            border: 1px solid #ddd;
+            padding: 10px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            border-color: var(--primary-dark);
+            box-shadow: 0 5px 15px rgba(11, 30, 59, 0.3);
+        }
+
+        /* --- PRODUCT GRID --- */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-image {
+            height: 220px;
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .card-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-tag {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--primary-light);
+            color: var(--white);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .card-body {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 10px;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 15px;
+        }
+
+        .details-btn {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* --- MODAL --- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .modal.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background-color: var(--white);
+            width: 90%;
+            max-width: 900px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            overflow: hidden;
+            position: relative;
+            animation: slideUp 0.4s ease;
+        }
+
+        .modal-image {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .modal-image img {
+            max-width: 100%;
+        }
+
+        .modal-info {
+            padding: 40px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-muted);
+            z-index: 10;
+        }
+
+        .feature-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        .feature-list li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #051021;
+            color: #8da2b5;
+            padding: 60px 5% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* --- SERVICES SECTION --- */
+        .services-section {
+            padding: 80px 5%;
+            max-width: 1400px;
+            margin: 140px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            transition: all 0.4s ease;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%);
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 0.4s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            color: var(--white);
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card i {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 25px;
+            transition: color 0.4s ease;
+        }
+
+        .service-card:hover i {
+            color: var(--white);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+            transition: color 0.4s ease;
+        }
+
+        .service-card:hover h3 {
+            color: var(--white);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            transition: color 0.4s ease;
+        }
+
+        .service-card:hover p {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .why-us {
+            background: var(--primary-dark);
+            color: var(--white);
+            padding: 60px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .why-item i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        /* Responsive */
+        /* Catalog Search Bar */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 40px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 50px 15px 25px;
+            border-radius: 50px;
+            border: 2px solid #eee;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            outline: none;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 8px 25px rgba(0, 210, 211, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--accent);
+            font-size: 1.2rem;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .modal-content {
+                grid-template-columns: 1fr;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            /* Simplified for mobile */
+        }
+
+        /* --- CONTACT SECTION --- */
+        .contact-section {
+            padding: 80px 5%;
+            max-width: 1400px;
+            margin: 140px auto 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+
+        .contact-info-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--accent);
+            background: rgba(0, 210, 211, 0.1);
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        .info-item h4 {
+            margin-bottom: 5px;
+            color: var(--primary-dark);
+        }
+
+        .info-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .contact-form {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-dark);
+            font-size: 0.9rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .map-container {
+            margin-top: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 300px;
+            box-shadow: var(--shadow);
+        }
+
+        /* --- AUTOMATIC QUOTE WIZARD --- */
+        .quote-section {
+            padding: 40px 5%;
+            max-width: 1600px;
+            margin: 120px auto 0;
+            display: none;
+            /* Controlled by JS */
+            animation: fadeIn 0.5s ease;
+        }
+
+        .quote-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            min-height: 80vh;
+        }
+
+        /* Wizard - Left Side */
+        .quote-wizard {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wizard-step {
+            display: none;
+            animation: slideUp 0.4s ease;
+        }
+
+        .wizard-step.active {
+            display: block;
+        }
+
+        .step-indicator {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .step-dot {
+            width: 12px;
+            height: 12px;
+            background: #eee;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .step-dot.active {
+            background: var(--accent);
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(0, 210, 211, 0.4);
+        }
+
+        .product-selector {
+            border: 2px solid #eee;
+            border-radius: 12px;
+            padding: 2px;
+            margin-bottom: 20px;
+            transition: all 0.3s;
+        }
+
+        .product-selector:focus-within {
+            border-color: var(--accent);
+            box-shadow: 0 0 10px rgba(0, 210, 211, 0.2);
+        }
+
+        .product-list-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .product-list-item:hover {
+            background: #f8f9fa;
+        }
+
+        .product-list-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        /* Live Preview - Right Side */
+        /* Live Preview - Right Side */
+        .quote-preview {
+            background: #fff;
+            border-radius: 5px;
+            padding: 60px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border: 1px solid #e0e0e0;
+            font-family: 'Open Sans', sans-serif;
+            /* Cleaner font */
+        }
+
+        .preview-header {
+            border-bottom: 2px solid var(--primary-dark);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .preview-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .preview-title {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #333;
+            text-transform: uppercase;
+            text-align: right;
+            letter-spacing: 2px;
+        }
+
+        .quote-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 0.95rem;
+        }
+
+        .quote-table th {
+            text-align: left;
+            border-bottom: 2px solid #eee;
+            padding: 15px 10px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .quote-table td {
+            padding: 20px 10px;
+            border-bottom: 1px solid #f5f5f5;
+            color: #444;
+        }
+
+        .total-row {
+            margin-top: 50px;
+            text-align: right;
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        /* Responsive Contact */
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <span><i class="fas fa-phone"></i> +1 (407) 791-6462</span>
+            <span><i class="fas fa-envelope"></i> Info@jeymedical.com</span>
+        </div>
+        <div class="nav-container">
+            <a href="#" onclick="switchView('home')" class="logo" style="font-size: 20px;">
+                <img src="FOTOS/logo.png" alt="Logo" style="height: 50px; width: auto;">
+                JEY MEDICAL SUPPLIES & LOGISTICS
+            </a>
+            <nav class="nav-links">
+                <a href="#" onclick="switchView('home')" id="nav-home" style="color: var(--accent);">Home</a>
+                <a href="#" onclick="switchView('catalog')" id="nav-catalog">Catalog</a>
+                <a href="#" onclick="switchView('brands')" id="nav-brands">Brands</a>
+                <a href="#" onclick="switchView('services')" id="nav-services">Services</a>
+                <a href="#" onclick="switchView('contact')" id="nav-contact">Contact</a>
+            </nav>
+            <a href="#" onclick="switchView('quote')" class="cta-btn"><i class="fas fa-file-invoice-dollar"></i> Request
+                Quote</a>
+        </div>
+    </header>
+
+    <!-- Home View Container -->
+    <div id="home-view">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>High Performance <br><span>Medical Technology</span></h1>
+                <p>Authorized distributor of Health o Meter, Blickman, Clinton, and more. Equipping hospitals with
+                    precision, durability, and cutting-edge design.</p>
+                <a href="#" onclick="switchView('catalog')" class="cta-btn"
+                    style="padding: 15px 40px; font-size: 1.1rem;">View Products</a>
+            </div>
+            <!-- Branded Watermark -->
+            <div class="hero-watermark">
+                <img src="FOTOS/logo.png" alt="Watermark">
+                <span>JEY MEDICAL SUPPLIES & LOGISTICS</span>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="mission-vision-section" style="padding: 80px 5%; background-color: #fff;">
+            <div class="section-header">
+                <h2>Our Identity</h2>
+                <p>Committed to the future of global health.</p>
+            </div>
+            <div
+                style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; max-width: 1200px; margin: 0 auto;">
+                <!-- Mission -->
+                <div
+                    style="flex: 1; min-width: 300px; background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="FOTOS/mission_img.png" alt="Mission"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3
+                            style="color: var(--primary-dark); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-bullseye" style="color: var(--accent);"></i> Our Mission
+                        </h3>
+                        <p style="color: var(--text-muted);">
+                            To provide comprehensive medical solutions and high-quality supplies that empower healthcare
+                            professionals. We are dedicated to connecting innovation and efficient logistics to improve
+                            clinical outcomes and patient quality of life in every community we serve.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Vision -->
+                <div
+                    style="flex: 1; min-width: 300px; background: #f8f9fa; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                    <div style="height: 250px; overflow: hidden;">
+                        <img src="FOTOS/vision_img.png" alt="Vision"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;"
+                            onmouseover="this.style.transform='scale(1.05)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                    </div>
+                    <div style="padding: 30px;">
+                        <h3
+                            style="color: var(--primary-dark); margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <i class="fas fa-eye" style="color: var(--accent);"></i> Our Vision
+                        </h3>
+                        <p style="color: var(--text-muted);">
+                            To be the most reliable logistics and medical equipment partner and a benchmark in the
+                            industry, recognized for our excellence in service, commitment to innovation, and ability to
+                            transform healthcare through an agile and humanized supply chain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div><!-- End Home View -->
+
+    <!-- Brands View -->
+    <section id="marcas" class="brands-section"
+        style="display: none; padding: 80px 5%; margin-top: 140px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+        <div class="section-header">
+            <h2>Our Brands</h2>
+            <p>We work with the most prestigious manufacturers in the medical industry.</p>
+        </div>
+        <div class="brands-grid" id="brands-grid"
+            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px;">
+            <!-- Brands injected via JS -->
+        </div>
+    </section>
+
+    <!-- Services View -->
+    <section id="services-view" class="services-section" style="display: none;">
+        <div class="section-header">
+            <h2>Technical Services</h2>
+            <p>Comprehensive solutions to keep your medical equipment operating at peak performance.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-tools"></i>
+                <h3>Preventive Maintenance</h3>
+                <p>Scheduled inspections and maintenance to prevent downtime and extend the life of your equipment. We
+                    follow OEM manufacturer guidelines.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Calibration & Certification</h3>
+                <p>Ensure your diagnostic devices are accurate. We provide traceable calibration certificates for
+                    regulatory compliance.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Repair & Diagnostics</h3>
+                <p>Fast and reliable troubleshooting and repair for a wide range of medical devices. We use genuine
+                    parts.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-truck-loading"></i>
+                <h3>Asset Management</h3>
+                <p>Inventory, tracking, and lifecycle management of your medical assets to optimize your budget and
+                    operations.</p>
+            </div>
+        </div>
+
+        <div class="why-us">
+            <div class="why-item">
+                <i class="fas fa-user-md"></i>
+                <h3>Certified Technicians</h3>
+                <p>Biomedical engineers with factory training.</p>
+            </div>
+            <div class="why-item">
+                <i class="fas fa-check-circle"></i>
+                <h3>Regulatory Compliance</h3>
+                <p>Meeting FDA, ISO, and local standards.</p>
+            </div>
+            <div class="why-item">
+                <i class="fas fa-clock"></i>
+                <h3>Rapid Response</h3>
+                <p>Minimized downtime for critical care.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+            <h3 style="margin-bottom: 20px;">Ready to schedule a service?</h3>
+            <a href="mailto:Info@jeymedical.com" class="cta-btn" style="font-size: 1.2rem; padding: 15px 40px;">Contact
+                Service Team</a>
+        </div>
+    </section>
+
+    <!-- Quote View -->
+    <section id="quote-view" class="quote-section">
+        <div class="section-header">
+            <h2>Instant Quote Builder</h2>
+            <p>Select equipment and generate a formal quote in seconds.</p>
+        </div>
+
+        <div class="quote-container">
+            <!-- Left: Wizard -->
+            <div class="quote-wizard">
+                <div class="step-indicator">
+                    <div class="step-dot active" id="dot-1"></div>
+                    <div class="step-dot" id="dot-2"></div>
+                </div>
+
+                <!-- Step 1: Add Products -->
+                <div class="wizard-step active" id="step-1">
+                    <h3>1. Select Equipment</h3>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">Search and add items to your quote.</p>
+
+                    <div class="product-selector">
+                        <input type="text" id="quote-search" class="form-control" placeholder="Search products..."
+                            onkeyup="filterQuoteProducts()">
+                    </div>
+                    <div id="quote-product-list" style="height: 300px; overflow-y: auto;">
+                        <!-- Dynamic List -->
+                    </div>
+
+                    <div style="margin-top: 20px; text-align: right;">
+                        <button class="cta-btn" onclick="nextStep(2)">Next Step <i
+                                class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Details & Finish -->
+                <div class="wizard-step" id="step-2">
+                    <h3>2. Quote Details</h3>
+                    <p style="margin-bottom: 20px; color: var(--text-muted);">Who is this quote for?</p>
+
+                    <div class="form-group">
+                        <label>Organization Name</label>
+                        <input type="text" id="quote-org" class="form-control" placeholder="e.g. City Hospital"
+                            oninput="updatePreviewHeader()">
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Person</label>
+                        <input type="text" id="quote-name" class="form-control" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email for Delivery</label>
+                        <input type="email" id="quote-email" class="form-control" placeholder="john@example.com">
+                    </div>
+
+                    <div style="margin-top: 20px; display: flex; justify-content: space-between;">
+                        <button class="cta-btn" style="background: #ccc;" onclick="nextStep(1)">Back</button>
+                        <button class="cta-btn" onclick="generatePDF()">Generate Quote <i
+                                class="fas fa-file-pdf"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Live Preview -->
+            <div class="quote-preview" id="invoice-preview">
+                <div class="preview-header">
+                    <div>
+                        <div class="preview-logo" style="display: flex; align-items: center;">
+                            <img src="FOTOS/logo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+                            JEY MEDICAL
+                        </div>
+                        <div style="font-size: 0.9rem; color: #666; margin-top: 5px;">SUPPLIES & LOGISTICS</div>
+                        <div style="font-size: 0.8rem; color: #999; margin-top: 5px;">DEVENPORT, FL 33837</div>
+                    </div>
+                    <div>
+                        <div class="preview-title">ESTIMATE</div>
+                        <div style="text-align: right; margin-top: 5px; color: #666; font-size: 0.9rem;">
+                            Date: <span id="quote-date" style="color: #333; font-weight: 600;"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 30px; border-left: 4px solid var(--accent); padding-left: 15px;">
+                    <strong>PREPARED FOR:</strong><br>
+                    <span id="preview-org" style="font-size: 1.2rem;">[Organization Name]</span>
+                </div>
+
+                <table class="quote-table">
+                    <thead>
+                        <tr>
+                            <th>ITEM / DESCRIPTION</th>
+                            <th style="width: 80px;">QTY</th>
+                        </tr>
+                    </thead>
+                    <tbody id="quote-items-body">
+                        <tr>
+                            <td colspan="2" style="text-align: center; color: #999; padding: 30px;">No items selected
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="total-row">
+                    STATUS: <span style="color: var(--accent);">DRAFT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact View -->
+    <section id="contact-view" class="contact-section" style="display: none;">
+        <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>Get in touch with our team for quotes, service requests, or general inquiries.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div>
+                <div class="contact-info-card">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>7830 LAKE WILSON RD #1085<br>DEVENPORT, FL 33837 US</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+1 (407) 791-6462<br>Mon-Fri, 9am - 6pm EST</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>Info@jeymedical.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14065.719623865684!2d-81.597653!3d28.243543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7e8d38690847%3A0x6b86603774659f8!2s7830%20Lake%20Wilson%20Rd%2C%20Davenport%2C%20FL%2033896%2C%20USA!5e0!3m2!1sen!2sus!4v1625688541234!5m2!1sen!2sus"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="institution">Institution / Hospital</label>
+                        <input type="text" id="institution" class="form-control" placeholder="City General Hospital"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" class="form-control">
+                            <option>Request for Quote</option>
+                            <option>Service & Repair</option>
+                            <option>Product Inquiry</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" class="form-control" placeholder="How can we help you?"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="cta-btn" style="width: 100%; border: none; cursor: pointer;">Send
+                        Message</button>
+                    <p style="margin-top: 15px; font-size: 0.8rem; color: var(--text-muted); text-align: center;">
+                        <i class="fas fa-lock"></i> Your information is secure. We respect your privacy.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog -->
+    <section id="catalogo" class="catalog-section" style="display: none;">
+        <div class="section-header">
+            <h2>Specialized Catalog</h2>
+            <p>Select a category to filter our inventory.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-input" id="catalog-search"
+                placeholder="Search by product, brand, or category..." onkeyup="searchProducts()">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="diagnostic">Diagnostic</button>
+            <button class="filter-btn" data-filter="furniture">Furniture</button>
+            <button class="filter-btn" data-filter="surgical">Surgical</button>
+            <button class="filter-btn" data-filter="aesthetic">Aesthetic</button>
+            <button class="filter-btn" data-filter="pediatric">Pediatric</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="grid">
+            <!-- Products will be injected via JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 style="font-size: 1.1rem;">JEY MEDICAL SUPPLIES & LOGISTICS. LLC.</h4>
+                <p>7830 LAKE WILSON RD #1085<br>DEVENPORT, FL 33837 US</p>
+                <div style="margin-top: 15px; font-size: 0.9rem;">
+                    <strong>Registered Agents:</strong><br>
+                    Yaritza Oliveras Colón (AMBR)<br>
+                    Juan M. Martínez Cruz (AMBR)
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Diagnostic</a></li>
+                    <li><a href="#">Surgical</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Aesthetic</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Partner Brands</h4>
+                <ul>
+                    <li>Health o Meter®</li>
+                    <li>Clinton Industries</li>
+                    <li>Blickman</li>
+                    <li>MS3C</li>
+                </ul>
+            </div>
+        </div>
+        <div style="text-align: center; border-top: 1px solid #1f2d3d; padding-top: 20px; font-size: 0.8rem;">
+            &copy; 2026 JEY MEDICAL SUPPLIES & LOGISTICS. LLC. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-image">
+                <img id="modal-img" src="" alt="Product">
+            </div>
+            <div class="modal-info">
+                <span id="modal-brand"
+                    style="color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.9rem;">Brand</span>
+                <h2 id="modal-title" style="margin: 10px 0;">Product Name</h2>
+                <p id="modal-desc" style="color: var(--text-muted); margin-bottom: 20px;">Detailed description...</p>
+
+                <h4 style="margin-bottom: 10px;">Key Specifications:</h4>
+                <ul id="modal-specs" class="feature-list">
+                    <!-- Specs injected here -->
+                </ul>
+
+                <button class="cta-btn" style="width: 100%; margin-top: 20px;">Request Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logic -->
+    <script>
+        // Database of Products
+        const products = [
+            {
+                id: 1,
+                category: 'diagnostic',
+                brand: 'Health o Meter',
+                title: 'Digital Scale 500KL',
+                price: 395.00,
+                desc: 'The number one selling scale for primary care. Offers maximum precision and a wide platform for patient comfort.',
+                specs: ['Capacity: 250 kg / 550 lb', 'EMR Ready Technology', 'Automatic BMI Calculation', '2 Year Warranty'],
+                img: 'FOTOS/361-500KLAD.png'
+            },
+
+            {
+                id: 3,
+                category: 'surgical',
+                brand: 'Blickman',
+                title: 'Chrome Mayo Stand',
+                price: 131.00,
+                desc: 'Gold standard in operating rooms. Medical grade stainless steel resistant to corrosion and easy sterilization.',
+                specs: ['Precision height adjustment', 'Antistatic wheels', 'Removable tray', '304 Stainless Steel'],
+                img: 'FOTOS/516-0668871000.png'
+            },
+            {
+                id: 4,
+                category: 'diagnostic',
+                brand: 'Detecto',
+                title: 'Portable Scale 6560',
+                price: 3745.00,
+                desc: 'Designed for bariatric patients. Features safety handrails and integrated fold-up seat.',
+                specs: ['Capacity: 1000 lbs', 'Extra wide platform', 'Integrated padded seat', 'Wi-Fi/Bluetooth Connectivity'],
+                img: 'FOTOS/184-6560 Portable with Handrail.png'
+            },
+            {
+                id: 5,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Phlebotomy Chair 66029P',
+                price: 445.00,
+                desc: 'Superior ergonomics for labs. Adjustable arms and antimicrobial surface for maximum hygiene.',
+                specs: ['Pneumatic height adjustment', 'Flip-up arms', 'Chrome 5-point base', 'Hospital grade vinyl'],
+                img: 'FOTOS/466-66029P.png'
+            },
+            {
+                id: 6,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Sydney Medical Chair',
+                price: 2399.00,
+                desc: 'Luxury and functionality for aesthetic clinics. 4 motors control height, backrest, and footrest independently.',
+                specs: ['Hand and foot remote control', '240-degree rotation', 'Premium durable upholstery', 'Position memory'],
+                img: 'FOTOS/848-8228-BK - Sydney Medical Chair 4 Motors with Foot Remote & Hand Remote.png'
+            },
+            {
+                id: 7,
+                category: 'pediatric',
+                brand: 'Novum Medical',
+                title: 'Steel Hospital Crib',
+                price: 3164.00,
+                desc: 'Total safety for the smallest patients. Complies with all FDA pediatric safety regulations.',
+                specs: ['360° full access rails', '20 gauge steel', 'Antimicrobial mattress included', '5-inch wheels with brakes'],
+                img: 'FOTOS/263-E1981CG - CRIB,CHILD,GATCH DECK EPOXY.png'
+            },
+            {
+                id: 8,
+                category: 'surgical',
+                brand: 'Lakeside',
+                title: 'Utility Cart 311',
+                price: 217.00,
+                desc: 'Sterile mobile organization. Ideal for transporting instruments in clean areas.',
+                specs: ['3 soft-close drawers', 'Shelves with perimeter edge', 'Welded construction', 'Protective bumpers'],
+                img: 'FOTOS/531-311.png'
+            },
+            {
+                id: 9,
+                category: 'aesthetic',
+                brand: 'MS3C',
+                title: 'ProX Ambulance Stretcher',
+                price: 2685.00,
+                desc: 'Lightweight and durable for emergencies. Automatic loading system to facilitate paramedic work.',
+                specs: ['Aluminum structure', 'Orange waterproof mattress', 'Adjustable backrest 0-75°', 'Capacity 550 lbs'],
+                img: 'FOTOS/MS3C-ProX Frame Emergency Ambulance Stretcher.png'
+            },
+            {
+                id: 10,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Medical Cabinet 3013-27',
+                price: 0.00,
+                desc: 'High quality medical storage solution designed for clinical environments. Durable construction and easy to clean surfaces.',
+                specs: ['Premium laminate finish', 'Adjustable shelving', 'Soft-close hinges', 'Dimensions: Standard'],
+                img: 'FOTOS/466-3013-27.png'
+            },
+            {
+                id: 11,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Medical Cabinet 3013-28',
+                price: 825.00,
+                desc: 'Versatile medical cabinetry providing efficient storage and organization for exam rooms.',
+                specs: ['Easy-clean surfaces', 'Integrated sink option', 'Durable hardware', 'Modern design'],
+                img: 'FOTOS/466-3013-28.png'
+            },
+            {
+                id: 12,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Wall Cabinet 6059-U',
+                price: 641.00,
+                desc: 'Space-saving wall unit with durable construction. Ideal for maximizing exam room storage.',
+                specs: ['Easy-clean laminate', 'Adjustable shelves', 'Pre-assembled', 'Concealed hinges'],
+                img: 'FOTOS/466-6059-U-3WW.png'
+            },
+            {
+                id: 13,
+                category: 'furniture',
+                brand: 'Clinton Industries',
+                title: 'Power Table 67200',
+                price: 3500.00,
+                desc: 'Full power imaging table with adjustable height and sections. Designed for patient comfort and ease of access.',
+                specs: ['Power height adjustment', 'Trendelenburg positioning', 'Paper dispenser included', 'Heavy-duty steel frame'],
+                img: 'FOTOS/466-67200.png'
+            },
+            // Nibomed / Transport
+            { id: 14, category: 'surgical', brand: 'Nibomed', title: 'Stretcher Transport E200', price: 2850.00, desc: 'Reliable transport stretcher designed for patient safety and ease of maneuverability.', specs: ['Hydraulic height adjustment', 'Retractable guardrails', 'Central locking system', 'IV pole included'], img: 'FOTOS/493-E200.png' },
+            { id: 15, category: 'surgical', brand: 'Nibomed', title: 'Stretcher Trauma E200IX', price: 3200.00, desc: 'Trauma stretcher with Knee Gatch function for enhanced patient positioning.', specs: ['X-ray compatible deck', 'Knee gatch adjustment', 'Trendelenburg/Reverse Trendelenburg', 'Weight capacity: 550 lbs'], img: 'FOTOS/493-E200IX.png' },
+            { id: 16, category: 'furniture', brand: 'Nibomed', title: 'Medical Cabinet ALK06-AG01', price: 950.00, desc: 'Durable medical storage cabinet for clinical supplies.', specs: ['Stainless steel construction', 'Lockable doors', 'Adjustable shelves', 'Easy to clean'], img: 'FOTOS/493-ALK06-AG01.png' },
+            { id: 17, category: 'furniture', brand: 'Nibomed', title: 'Medical Cart ALK06-AT3', price: 680.00, desc: 'Versatile utility cart for medical equipment transport.', specs: ['Multi-tier storage', 'Smooth rolling casters', 'Heavy duty frame', 'Ergonomic handles'], img: 'FOTOS/493-ALK06-AT3.png' },
+
+            // Hausted
+            { id: 18, category: 'furniture', brand: 'Hausted', title: 'Phlebotomy Chair Bariatric 6200DA', price: 1047.00, desc: 'Heavy-duty phlebotomy chair designed for bariatric patients.', specs: ['Extra wide seat', 'Reinforced frame', 'Padded armrests', 'Easy entry/exit'], img: 'FOTOS/45-6200DA.png' },
+            { id: 19, category: 'furniture', brand: 'Hausted', title: 'Exam Table 4200', price: 1795.00, desc: 'Examination table with integrated drawers and stirrups.', specs: ['Storage drawers included', 'Adjustable stirrups', 'Paper roll holder', 'Seamless upholstery'], img: 'FOTOS/45-4200.png' },
+            { id: 20, category: 'aesthetic', brand: 'Hausted', title: 'All-Purpose Hydraulic Chair APC250ST-X', price: 3895.00, desc: 'Versatile hydraulic chair suitable for various medical procedures.', specs: ['Hydraulic lift', 'Rotational base', 'Reclining backrest', 'Adjustable headrest'], img: 'FOTOS/45-APC250ST-X.png' },
+            { id: 21, category: 'furniture', brand: 'Hausted', title: 'Replacement Pad 1007-02', price: 156.00, desc: 'High-quality replacement pad for medical tables (29x76x4).', specs: ['Dimensions: 29" x 76" x 4"', 'Durable foam', 'Vinyl cover', 'Easy to sanitize'], img: 'FOTOS/45-HSP-1007-02.png' },
+            { id: 22, category: 'furniture', brand: 'Hausted', title: 'Replacement Pad 1007-05', price: 145.00, desc: 'Replacement pad for stretchers or tables (24x76x4).', specs: ['Dimensions: 24" x 76" x 4"', 'Comfortable support', 'Fluid resistant', 'Standard fit'], img: 'FOTOS/45-HSP-1007-05.png' },
+
+            { id: 23, category: 'surgical', brand: 'Blickman', title: 'Surgical Utensil 1011261000', price: 85.00, desc: 'Operating room equipment crafted from high-grade stainless steel.', specs: ['304 Stainless Steel', 'Corrosion resistant', 'Sterilizable', 'OR Standard'], img: 'FOTOS/516-1011261000.png' },
+            { id: 24, category: 'surgical', brand: 'Blickman', title: 'Surgical Kit 24224400KT', price: 245.00, desc: 'Specialized surgical instrument or accessory kit.', specs: ['Precision crafted', 'Medical grade', 'Autoclavable', 'Durable'], img: 'FOTOS/516-24224400KT.png' },
+            { id: 25, category: 'surgical', brand: 'Blickman', title: 'Medical Device 0531415400-M1', price: 420.00, desc: 'Professional medical equipment solution.', specs: ['Heavy duty', 'Hospital grade', 'Reliable performance', 'Easy maintenance'], img: 'FOTOS/516-0531415400-M1.png' },
+
+            // Detecto
+            { id: 26, category: 'furniture', brand: 'Detecto', title: 'Rescue Cart Anesthesiology (Blue)', price: 1484.00, desc: 'Blue anesthesia cart with 6 drawers for organized secure storage.', specs: ['6 Drawers', 'Key lock', 'Push handle', 'ABS bumpers'], img: 'FOTOS/184-RC33669BLU-L.png' },
+            { id: 27, category: 'furniture', brand: 'Detecto', title: 'Rescue Cart Anesthesiology (Blue)', price: 1490.00, desc: 'Anesthesia cart designed for efficient workflow.', specs: ['Durable steel construction', 'Full extension slides', 'Removable plastic top', '5-inch wheels'], img: 'FOTOS/184-RC33669BLU-L.png' },
+            { id: 28, category: 'surgical', brand: 'Detecto', title: 'Crash Cart Emergency (Red) 6-Drawer', price: 1980.00, desc: 'Emergency crash cart with 6 drawers for critical care supplies.', specs: ['Red for emergency visibility', 'Break-away lock', 'IV pole mount', 'Oxygen tank holder'], img: 'FOTOS/184-RC333369RED-L.png' },
+            { id: 29, category: 'surgical', brand: 'Detecto', title: 'Crash Cart Emergency (Red) 5-Drawer', price: 1895.00, desc: '5-drawer emergency cart for rapid response.', specs: ['Quick access', 'Stabilizer base', 'Cardiac board', 'Defibrillator shelf'], img: 'FOTOS/184-RC333369RED-L.png' },
+            { id: 30, category: 'furniture', brand: 'Detecto', title: 'Rescue Cart General Purpose (White)', price: 2155.00, desc: 'Multi-purpose white medical cart for general hospital use.', specs: ['Clean white finish', 'Multi-drawer configuration', 'Easy glide casters', 'Sanitary surfaces'], img: 'FOTOS/184-RC33669WHT.png' },
+
+            // UMF Medical
+            { id: 31, category: 'furniture', brand: 'UMF Medical', title: 'POWER EXAM TABLE SOFT LINEN', price: 2471.00, desc: 'Power examination table with soft linen upholstery for patient comfort.', specs: ['Power height/back', 'Programmable positions', 'High weight capacity', 'Foot control'], img: 'FOTOS/248-4040-650-200-SL.png' },
+            { id: 33, category: 'furniture', brand: 'UMF Medical', title: 'Procedure Chair 5016', price: 3418.00, desc: 'Advanced procedure chair in True Graphite color.', specs: ['Articulating headrest', 'Power tilt', 'Accessory rails', 'Ergonomic design'], img: 'FOTOS/248-5016-650-300-044.png' },
+            {
+                id: 34,
+                category: 'surgical',
+                brand: 'Blickman',
+                title: 'MAYO TRAY S/S 16"X21" BENJAMIN',
+                price: 135.00,
+                desc: 'Stainless steel Mayo Tray, 16" x 21". Durable construction for surgical environments.',
+                specs: ['Stainless Steel', '16" x 21" Dimensions', 'Durable Construction', 'Easy to Clean'],
+                img: 'FOTOS/516-0668871000.png'
+            },
+            {
+                id: 35,
+                category: 'furniture',
+                brand: 'MS3C',
+                title: 'Lite ABS Medication Cart 200MB',
+                price: 780.00,
+                desc: 'Lightweight ABS medication cart designed for ease of mobility and efficient storage.',
+                specs: ['ABS Plastic Construction', 'Lightweight Design', 'Secure Medication Storage', 'Easy to Maneuver'],
+                img: 'FOTOS/MS3C-200MB, Lite ABS Medication.png'
+            },
+            {
+                id: 36,
+                category: 'surgical',
+                brand: 'MS3C',
+                title: 'Evacuation Chair 100TS',
+                price: 295.00,
+                desc: 'Lightweight stair evacuation chair for emergency patient transport.',
+                specs: ['Aluminum alloy', 'Foldable structure', 'Capacity: 350 lbs', 'Easy operation'],
+                img: 'FOTOS/MS3C-100TS, Lightweight Stair Evacuation Chair.png'
+            },
+            // DIR Aesthetics
+            {
+                id: 37,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Ink Electric Esthetician Chair 8103-3G-GY',
+                price: 1999.00,
+                desc: '3-Motor electric esthetician chair for precise positioning and comfort.',
+                specs: ['3 Motors', 'Electric adjustment', 'Premium upholstery', 'Versatile application'],
+                img: 'FOTOS/848-8103-3G-GY - Ink Electric Esthetician Chair - 3 Motors.png'
+            },
+            {
+                id: 38,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Pavo Rotating Spa Table 8709-2G-BK',
+                price: 2250.00,
+                desc: 'Pavo rotating medical spa treatment table/chair with 4 motors.',
+                specs: ['4 Motors', 'Rotating base', 'Fully adjustable', 'Ergonomic design'],
+                img: 'FOTOS/848-8709-2G-BK.png'
+            },
+            {
+                id: 39,
+                category: 'aesthetic',
+                brand: 'DIR Aesthetics',
+                title: 'Aurora Spa Table 8266-2G-GY',
+                price: 2500.00,
+                desc: 'Aurora Medical Spa Table with 4 motors and hand/foot remote.',
+                specs: ['4 Motors', 'Hand & Foot Remote', 'Luxurious comfort', 'Heavy-duty stability'],
+                img: 'FOTOS/848-8266-2G-GY Aurora Medical Spa Table with 4 Motors, Plus Hand & Foot.png'
+            },
+            {
+                id: 40,
+                category: 'pediatric',
+                brand: 'UMF Medical',
+                title: 'Baby Bassinette SS8525',
+                price: 862.00,
+                desc: 'Stainless steel bassinette with mattress, shelf, and drawer. Ensures safety and durability for pediatric care.',
+                specs: ['Stainless Steel Frame', 'Clear Acrylic Basket', 'Storage Shelf & Drawer', 'Locking Casters'],
+                img: 'FOTOS/248-SS8525.png'
+            },
+            {
+                id: 41,
+                category: 'surgical',
+                brand: 'Cogent',
+                title: 'Transport Stretcher E200 (Updates)',
+                price: 3100.00,
+                desc: 'Advanced transport stretcher with updated features for patient safety and comfort.',
+                specs: ['Hydraulic height adjustment', 'Trendelenburg / Reverse Trendelenburg', 'Central locking system', 'Retractable 5th wheel'],
+                img: 'FOTOS/Camillas de Transporte E200 ( Updates ).png'
+            },
+            {
+                id: 42,
+                category: 'surgical',
+                brand: 'Detecto',
+                title: 'Crash Cart System (Updates)',
+                price: 1550.00,
+                desc: 'Updated crash cart system designed for rapid emergency response and organized storage.',
+                specs: ['Defibrillator shelf', 'IV pole', 'Cardiac board', 'Central lock'],
+                img: 'FOTOS/Carros de paro ( Updates ).png'
+            },
+            {
+                id: 43,
+                category: 'surgical',
+                brand: 'Detecto',
+                title: 'Anesthesia Cart (New Version)',
+                price: 1720.00,
+                desc: 'New generation anesthesia cart with enhanced security and ergonomic features.',
+                specs: ['Advanced locking system', 'Accessory rails', 'Smooth rolling casters', 'Large capacity drawers'],
+                img: 'FOTOS/Carro de anestesiología nueva version.png'
+            },
+            {
+                id: 44,
+                category: 'surgical',
+                brand: 'Detecto',
+                title: 'Anesthesia Cart (Classic)',
+                price: 1350.00,
+                desc: 'Classic anesthesia cart featuring durable construction and proven reliability.',
+                specs: ['Standard configuration', 'Durable steel body', 'Easy to clean', 'Multiple drawer sizes'],
+                img: 'FOTOS/Carro de anestesiología antigua version.png'
+            },
+            {
+                id: 45,
+                category: 'aesthetic',
+                brand: 'Silhouet-Tone',
+                title: 'Elite Bronze',
+                price: 1570.00,
+                desc: 'Double hydraulic aesthetic chair designed for comfort and ergonomics in various beauty treatments.',
+                specs: ['Hydraulic height adjustment', 'Pneumatic backrest (up to 85°)', 'Anatomical headrest', '3" foam padding'],
+                img: 'FOTOS/Elite Bronze.png'
+            },
+            {
+                id: 46,
+                category: 'medical',
+                brand: 'Silhouet-Tone',
+                title: 'EVOLUTION XHD',
+                price: 6995.00,
+                desc: 'Cutting-edge electrolysis machine for permanent hair removal with triple-frequency technology.',
+                specs: ['Triple-Frequency', 'Vector Modulations', '10.1-inch Touch Screen', 'Wi-Fi capabilities'],
+                img: 'FOTOS/EVOLUTION XHD.png'
+            },
+            {
+                id: 47,
+                category: 'medical',
+                brand: 'Silhouet-Tone',
+                title: 'ULTRAFRAXEL CO2 LASER',
+                price: 12000.00,
+                desc: 'Professional fractional CO2 laser for skin rejuvenation, wrinkle removal, and scar treatment.',
+                specs: ['10600nm wavelength', '1-60W power', 'Fractional & CW modes', '7-joint articulated arm'],
+                img: 'FOTOS/ULTRAFRAXEL CO2 LASER.png'
+            },
+            {
+                id: 48,
+                category: 'medical',
+                brand: 'Silhouet-Tone',
+                title: 'Soli-Lite',
+                price: 22995.00,
+                desc: 'High-end photobiomodulation LED light therapy system (FDA Class II).',
+                specs: ['490 high-density LEDs', '14 pre-programmed protocols', 'Precise monochromatic wavelengths', 'Mobile ergonomic panel'],
+                img: 'FOTOS/Soli-Lite.png'
+            },
+            {
+                id: 49,
+                category: 'medical',
+                brand: 'Silhouet-Tone',
+                title: 'Spirit',
+                price: 70000.00,
+                desc: 'Advanced Laser Hair Removal system using Alexandrite, Diode, and YAG wavelengths simultaneously.',
+                specs: ['3 Wavelengths (755/810/1064nm)', 'Speed Pulse Technology', '24h Internal Cooling', 'Touch control handpiece'],
+                img: 'FOTOS/Spirit.png'
+            },
+            {
+                id: 50,
+                category: 'aesthetic',
+                brand: 'Silhouet-Tone',
+                title: 'ELITE SILVER STAR',
+                price: 2495.00,
+                desc: 'Versatile hydraulic aesthetic and dental chair with 360-degree rotation.',
+                specs: ['Hydraulic height (26-33.75")', '360° rotation', 'Pneumatic backrest (80°)', '450 lbs lift capacity'],
+                img: 'FOTOS/ELITE SILVER STAR.png'
+            },
+            {
+                id: 51,
+                category: 'medical',
+                brand: 'ZCS International',
+                title: 'SCRUB SERVE',
+                price: 15000.00,
+                desc: 'Automated scrub dispensing and management system for healthcare facilities.',
+                specs: ['RFID Technology', 'Automated Dispensing', 'Inventory Management', '24/7 Availability'],
+                img: 'FOTOS/SCRUB SERVE.png'
+            },
+            {
+                id: 52,
+                category: 'medical',
+                brand: 'Staxi Healthcare',
+                title: 'Ally Chair AL010',
+                price: 1200.00,
+                desc: 'Safe and secure patient transport chair with fail-safe braking system.',
+                specs: ['600 lbs Weight Capacity', 'Automatic Fail-Safe Brake', 'Nestable Design', 'Non-folding Frame'],
+                img: 'FOTOS/Ally Chair AL010.png'
+            },
+            {
+                id: 53,
+                category: 'medical',
+                brand: 'Staxi Healthcare',
+                title: 'Ranger Chair RA010',
+                price: 1800.00,
+                desc: 'Heavy-duty nestable transport chair with 800lb capacity and automatic braking.',
+                specs: ['800 lbs Capacity', 'Automatic Braking', 'Nestable', 'Anti-tip Design'],
+                img: 'FOTOS/Ranger Chair RA010.png'
+            },
+            {
+                id: 54,
+                category: 'medical',
+                brand: 'Staxi Healthcare',
+                title: 'MR Chair MR010',
+                price: 5111.00,
+                desc: 'MRI-conditional transport chair designed for safety in magnetic environments (3.0 Tesla).',
+                specs: ['MRI Conditional (3.0T)', '600 lbs Capacity', 'Non-magnetic Frame', 'Never-fail Brake'],
+                img: 'FOTOS/MR Chair MR010.png'
+            },
+            {
+                id: 55,
+                category: 'medical',
+                brand: 'Staxi Healthcare',
+                title: 'Max Chair ST310',
+                price: 3435.00,
+                desc: 'Bariatric transport chair offering superior strength and comfort with 1000lb capacity.',
+                specs: ['1000 lbs Bariatric Capacity', 'Extra Wide Seat (27")', 'Fail-safe Brake', 'Heavy-duty Frame'],
+                img: 'FOTOS/Max Chair ST310.png'
+            }
+        ];
+
+        // DOM Elements
+        const grid = document.getElementById('grid');
+        const btns = document.querySelectorAll('.filter-btn');
+        const modal = document.getElementById('product-modal');
+
+        // Initial Load
+        renderProducts('all');
+        renderBrands();
+
+        // Filter Function
+        btns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all
+                btns.forEach(b => b.classList.remove('active'));
+                // Add active to clicked
+                btn.classList.add('active');
+                // Render
+                renderProducts(btn.dataset.filter, 'category');
+            });
+        });
+
+        function renderProducts(filter, type = 'category') {
+            grid.innerHTML = '';
+            let filtered = [];
+
+            if (filter === 'all') {
+                filtered = products;
+            } else if (type === 'brand') {
+                filtered = products.filter(p => p.brand === filter);
+            } else {
+                filtered = products.filter(p => p.category === filter);
+            }
+
+            // Update section title if filtering by brand
+            const title = document.querySelector('#catalogo h2');
+            const desc = document.querySelector('#catalogo p');
+
+            if (type === 'brand') {
+                title.textContent = `${filter} Products`;
+                desc.textContent = `Showing exclusive equipment from ${filter}`;
+                // Reset category buttons visual state
+                btns.forEach(b => b.classList.remove('active'));
+            } else {
+                if (filter === 'all') {
+                    title.textContent = 'Specialized Catalog';
+                    desc.textContent = 'Select a category to filter our inventory.';
+                }
+            }
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; font-size: 1.2rem; color: #888;">No products available in this category at the moment.</p>';
+                return;
+            }
+
+            filtered.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <div class="card-image">
+                        <span class="brand-tag">${p.brand}</span>
+                        <img src="${p.img}" alt="${p.title}" onerror="this.src='https://placehold.co/400x300?text=Image+Not+Available'">
+                    </div>
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                             <h3 class="product-title">${p.title}</h3>
+                             <div style="font-weight: 800; color: var(--primary-dark); font-size: 1.1rem;">$${p.price.toLocaleString('en-US')}</div>
+                        </div>
+                        <p class="product-desc">${p.desc.substring(0, 80)}...</p>
+                        <div class="card-footer">
+                            <span style="font-size: 0.8rem; color: #888;">Available</span>
+                            <a href="javascript:void(0)" class="details-btn" onclick="openModal(${p.id})">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Search Functionality
+        function searchProducts() {
+            const query = document.getElementById('catalog-search').value.toLowerCase();
+            const grid = document.getElementById('grid');
+            if (!grid) return;
+
+            grid.innerHTML = '';
+
+            const filtered = products.filter(p =>
+                p.title.toLowerCase().includes(query) ||
+                p.brand.toLowerCase().includes(query) ||
+                p.category.toLowerCase().includes(query)
+            );
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<p style="grid-column: 1/-1; text-align: center; font-size: 1.2rem; color: #888;">No products found matching your search.</p>';
+                return;
+            }
+
+            filtered.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <div class="card-image">
+                        <span class="brand-tag">${p.brand}</span>
+                        <img src="${p.img}" alt="${p.title}" onerror="this.src='https://placehold.co/400x300?text=Image+Not+Available'">
+                    </div>
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; align-items: start;">
+                             <h3 class="product-title">${p.title}</h3>
+                             <div style="font-weight: 800; color: var(--primary-dark); font-size: 1.1rem;">$${p.price.toLocaleString('en-US')}</div>
+                        </div>
+                        <p class="product-desc">${p.desc.substring(0, 80)}...</p>
+                        <div class="card-footer">
+                            <span style="font-size: 0.8rem; color: #888;">Available</span>
+                            <a href="javascript:void(0)" class="details-btn" onclick="openModal(${p.id})">
+                                View Details <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+
+            // Update UI to reflect search mode
+            const btns = document.querySelectorAll('.filter-btn');
+            btns.forEach(b => b.classList.remove('active'));
+            // Optionally update title
+            // const title = document.querySelector('#catalogo h2');
+            // if(title && query.length > 0) title.textContent = `Search Results: "${query}"`;
+        }
+
+        // Modal Functions
+        function openModal(id) {
+            const p = products.find(prod => prod.id === id);
+            if (!p) return;
+
+            document.getElementById('modal-img').src = p.img;
+            document.getElementById('modal-brand').textContent = p.brand;
+            document.getElementById('modal-title').textContent = p.title;
+            document.getElementById('modal-desc').textContent = p.desc;
+
+            const specsList = document.getElementById('modal-specs');
+            specsList.innerHTML = '';
+            p.specs.forEach(spec => {
+                const li = document.createElement('li');
+                li.textContent = spec;
+                specsList.appendChild(li);
+            });
+
+            modal.classList.add('show');
+        }
+
+        function closeModal() {
+            modal.classList.remove('show');
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+        // View Switcher
+        function switchView(viewName) {
+            const views = {
+                'home': document.getElementById('home-view'),
+                'catalog': document.getElementById('catalogo'),
+                'brands': document.getElementById('marcas'),
+                'services': document.getElementById('services-view'),
+                'contact': document.getElementById('contact-view')
+            };
+
+            const navs = {
+                'home': document.getElementById('nav-home'),
+                'catalog': document.getElementById('nav-catalog'),
+                'brands': document.getElementById('nav-brands'),
+                'services': document.getElementById('nav-services'),
+                'contact': document.getElementById('nav-contact')
+            };
+
+            // Hide all views
+            Object.values(views).forEach(el => {
+                if (el) el.style.display = 'none';
+            });
+
+            // Reset nav colors
+            Object.values(navs).forEach(el => {
+                if (el) el.style.color = 'var(--primary-light)';
+            });
+
+            // Show active view and highlight nav
+            if (views[viewName]) views[viewName].style.display = 'block';
+            if (navs[viewName]) navs[viewName].style.color = 'var(--accent)';
+
+            window.scrollTo(0, 0);
+        }
+
+        function renderBrands() {
+            const brandsContainer = document.getElementById('brands-grid');
+            const uniqueBrands = [...new Set(products.map(p => p.brand))];
+
+            // Map brands to their logo files
+            const brandLogos = {
+                'Health o Meter': 'LOGO HEALTH O METER.png',
+                'Clinton Industries': 'LOGO CLINTON.png',
+                'Blickman': 'logo_blickman.png',
+                'Detecto': 'LOGO DETECTO.png',
+                'DIR Aesthetics': 'logo_dir_new.png',
+                'Novum Medical': 'LOGO NOVUM MEDICAL PRODUCTS.png',
+                'Lakeside': 'LOGO LAKESIDE.png',
+                'Silhouet-Tone': 'LOGO SILHOUET-TONE.png',
+                'ZCS International': 'LOGO ZCS INTERNATIONAL.png',
+                'Staxi Healthcare': 'LOGO STAXI HEALTHCARE.png',
+                'MS3C': 'LOGO MS3C.png',
+                'Nibomed': 'LOGO NIBOMED.png',
+                'Hausted': 'LOGO HAUSTED.png',
+                'UMF Medical': 'LOGO UMF MEDICAL.png',
+                'Cogent': 'LOGO COGENT.png'
+            };
+
+            uniqueBrands.forEach(brand => {
+                const div = document.createElement('div');
+                div.style.cssText = `
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 15px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                    text-align: center;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    border: 1px solid #f0f0f0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 180px;
+                    position: relative;
+                    overflow: hidden;
+                `;
+
+                // Logo Image
+                const logoFilename = brandLogos[brand];
+                if (logoFilename) {
+                    div.innerHTML = `
+                        <div style="width: 100%; height: 120px; display: flex; align-items: center; justify-content: center; margin-bottom: 10px;">
+                            <img src="FOTOS/${logoFilename}" alt="${brand}" style="max-width: 80%; max-height: 100%; object-fit: contain;">
+                        </div>
+                        <h3 style="color: var(--primary-dark); font-size: 1rem; margin: 0; opacity: 0.7;">${brand}</h3>
+                    `;
+                } else {
+                    div.innerHTML = `<h3 style="color: var(--primary-dark); font-size: 1.5rem; margin: 0;">${brand}</h3>`;
+                }
+
+                div.onmouseover = () => {
+                    div.style.transform = 'translateY(-10px)';
+                    div.style.borderColor = 'var(--accent)';
+                    div.style.boxShadow = '0 15px 40px rgba(0, 210, 211, 0.2)';
+                    const h3 = div.querySelector('h3');
+                    if (h3) h3.style.color = 'var(--accent)';
+                    if (h3) h3.style.opacity = '1';
+                };
+                div.onmouseout = () => {
+                    div.style.transform = 'translateY(0)';
+                    div.style.borderColor = '#f0f0f0';
+                    div.style.boxShadow = '0 10px 30px rgba(0,0,0,0.08)';
+                    const h3 = div.querySelector('h3');
+                    if (h3) h3.style.color = 'var(--primary-dark)';
+                    if (h3) h3.style.opacity = '0.7';
+                };
+
+                div.onclick = () => {
+                    switchView('catalog');
+                    renderProducts(brand, 'brand');
+                };
+
+                brandsContainer.appendChild(div);
+            });
+        }
+        // Initialize Quote Date
+        const dateElement = document.getElementById('quote-date');
+        if (dateElement) {
+            dateElement.innerText = new Date().toLocaleDateString();
+        }
+
+        // Wizard Logic
+        let quoteItems = [];
+
+        function nextStep(step) {
+            document.querySelectorAll('.wizard-step').forEach(el => el.classList.remove('active'));
+            const targetStep = document.getElementById(`step-${step}`);
+            if (targetStep) targetStep.classList.add('active');
+
+            document.querySelectorAll('.step-dot').forEach((el, index) => {
+                // index is 0-based, step is 1-based
+                if (index < step) el.classList.add('active');
+                else el.classList.remove('active');
+            });
+        }
+
+        function populateQuoteProducts() {
+            const container = document.getElementById('quote-product-list');
+            if (!container) return;
+            container.innerHTML = '';
+
+            // Check if products array exists
+            if (typeof products !== 'undefined') {
+                products.forEach(p => {
+                    const item = document.createElement('div');
+                    item.className = 'product-list-item';
+                    item.onclick = function () { addToQuote(p.id); }; // Pass ID
+                    item.innerHTML = `
+                        <img src="${p.img}" alt="${p.title}" onerror="this.src='https://placehold.co/50'">
+                        <div style="flex:1">
+                            <div style="font-weight:700">${p.title}</div>
+                            <div style="font-size:0.8rem; color:#666">${p.category} | $${p.price.toLocaleString('en-US')}</div>
+                        </div>
+                        <i class="fas fa-plus-circle" style="color:var(--accent); font-size:1.2rem"></i>
+                    `;
+                    container.appendChild(item);
+                });
+            }
+        }
+
+        function filterQuoteProducts() {
+            const input = document.getElementById('quote-search');
+            if (!input) return;
+            const query = input.value.toLowerCase();
+            const items = document.querySelectorAll('.product-list-item');
+            items.forEach(item => {
+                const text = item.innerText.toLowerCase();
+                item.style.display = text.includes(query) ? 'flex' : 'none';
+            });
+        }
+
+        function addToQuote(id) {
+            const product = products.find(p => p.id === id);
+            if (!product) return;
+            // Check if exists
+            const existing = quoteItems.find(i => i.id === id);
+            if (existing) {
+                existing.qty = (existing.qty || 1) + 1;
+            } else {
+                quoteItems.push({ id: product.id, title: product.title, price: product.price, qty: 1 });
+            }
+            updatePreview();
+        }
+
+        function updatePreviewHeader() {
+            const orgInput = document.getElementById('quote-org');
+            const previewOrg = document.getElementById('preview-org');
+            if (orgInput && previewOrg) {
+                previewOrg.innerText = orgInput.value || '[Organization Name]';
+            }
+        }
+
+        function updatePreview() {
+            const tbody = document.getElementById('quote-items-body');
+            if (!tbody) return;
+            tbody.innerHTML = '';
+
+            // Remove previous total row if it exists inside the table structure or wrapper
+            // (Note: The previous implemention didn't have a grand total container in HTML, so we might need to inject it or just append a row)
+
+            if (quoteItems.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" style="text-align: center; color: #999; padding: 30px;">No items selected</td></tr>';
+                // Try to clear total display if we added one (we'll add one below the table usually)
+                const totalDisplay = document.getElementById('quote-grand-total');
+                if (totalDisplay) totalDisplay.innerHTML = '';
+                return;
+            }
+
+            let grandTotal = 0;
+
+            quoteItems.forEach(item => {
+                const total = item.price * item.qty;
+                grandTotal += total;
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td style="font-weight:600">${item.title}</td>
+                    <td style="text-align:center">${item.qty}</td>
+                    <td style="text-align:right">$${item.price.toLocaleString('en-US')}</td>
+                    <td style="text-align:right; font-weight:700">$${total.toLocaleString('en-US')}</td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            // Update or Create Grand Total Display
+            // We'll update the existing .total-row in the HTML if it matches, or inject content
+            const totalRow = document.querySelector('.quote-preview .total-row');
+            if (totalRow) {
+                totalRow.innerHTML = `
+                    <div style="font-size: 0.9rem; color: #666; margin-bottom: 5px;">ESTIMATED TOTAL</div>
+                    <div style="color: var(--primary-dark); font-size: 1.8rem; font-weight: 800;">$${grandTotal.toLocaleString('en-US')}</div>
+                    <div style="font-size: 0.8rem; color: var(--accent); margin-top: 5px;">STATUS: DRAFT</div>
+                `;
+            }
+        }
+
+        function generatePDF() {
+            // Check if event exists (it might not in some contexts, but usually does in onclick)
+            const btn = (typeof event !== 'undefined') ? event.target : null;
+            let originalText = '';
+            if (btn) {
+                originalText = btn.innerHTML;
+                btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating...';
+                btn.disabled = true;
+            }
+
+            setTimeout(() => {
+                alert('Quote Generated! A PDF copy has been sent to your email.');
+                if (btn) {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }
+                // Reset
+                quoteItems = [];
+                updatePreview();
+                nextStep(1);
+                const orgInput = document.getElementById('quote-org');
+                if (orgInput) orgInput.value = '';
+
+                const previewOrg = document.getElementById('preview-org');
+                if (previewOrg) previewOrg.innerText = '[Organization Name]';
+
+                switchView('home');
+            }, 2000);
+        }
+
+        // Initialize lists immediately
+        populateQuoteProducts();
+
+        // Updated switchView with Safety Checks
+        function switchView(viewName) {
+            const views = {
+                'home': document.getElementById('home-view'),
+                'catalog': document.getElementById('catalogo'),
+                'brands': document.getElementById('marcas'),
+                'services': document.getElementById('services-view'),
+                'contact': document.getElementById('contact-view'),
+                'quote': document.getElementById('quote-view')
+            };
+
+            const navs = {
+                'home': document.getElementById('nav-home'),
+                'catalog': document.getElementById('nav-catalog'),
+                'brands': document.getElementById('nav-brands'),
+                'services': document.getElementById('nav-services'),
+                'contact': document.getElementById('nav-contact')
+            };
+
+            // Hide all views
+            Object.values(views).forEach(el => {
+                if (el) el.style.display = 'none';
+            });
+
+            // Reset nav colors
+            Object.values(navs).forEach(el => {
+                if (el) el.style.color = 'var(--primary-light)';
+            });
+
+            // Show selected view
+            if (views[viewName]) {
+                views[viewName].style.display = 'block';
+                window.scrollTo(0, 0);
+            }
+
+            // Highlight nav
+            if (navs[viewName]) {
+                navs[viewName].style.color = 'var(--accent)';
+            }
+        }
+    </script>
+</body>
+
+</html>
